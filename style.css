@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+  width: 50vw;
+  color: white;
+}
+
+main {
+  background-color: rgb(9, 85, 172);
+  padding: 2rem;
+  border-radius: 2rem;
+  width: 350px;
+}
+
+@media screen and (max-width: 320px) {
+  main {
+    width: 300px;
+  }
+}
+
+.timer h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem;
+  font-size: 1rem;
+}
+
+.controls h3 {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: rgb(0, 132, 255);
+}
+
+#controls_reset_timer {
+  /* border: 1px solid rgb(248, 248, 248); */
+  padding: 1.2rem;
+  background-color: rgb(148, 23, 1);
+  border-radius: 1.5rem;
+}
+
+#controls_increment_timer {
+  /* border: 1px solid rgb(248, 248, 248); */
+  padding: 1.2rem;
+  background-color: rgb(189, 1, 126);
+  border-radius: 1.5rem;
+}
+
+#controls_decrement_timer {
+  /* border: 1px solid rgb(248, 248, 248); */
+  padding: 1.2rem;
+  background-color: rgb(11, 168, 6);
+  border-radius: 1.5rem;
+}
+
+#controls_reset_timer:hover {
+  cursor: pointer;
+  /* border: 1px solid rgb(248, 248, 248); */
+  background-color: rgb(255, 255, 255);
+}
+
+#controls_increment_timer:hover {
+  cursor: pointer;
+  /* border: 1px solid rgb(248, 248, 248); */
+  background-color: rgb(255, 255, 255);
+}
+
+#controls_decrement_timer:hover {
+  cursor: pointer;
+  /* border: 1px solid rgb(248, 248, 248); */
+  background-color: rgb(255, 255, 255);
+}
+
+.start h3 {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  /* border: 1px solid white; */
+  width: 50%;
+  border-radius: 0.5rem;
+}
+
+#start_counter {
+  background-color: rgb(12, 187, 187);
+}
+
+#start_counter:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+  color: rgb(11, 97, 97);
+}
+
+#timer_counter {
+  display: none;
+  background-color: rgb(187, 184, 12);
+}
+#stop_counter {
+  display: none;
+  cursor: pointer;
+  background-color: rgb(187, 53, 12);
+}
+#stop_counter:hover {
+  background-color: rgb(187, 53, 12, 0.8);
+}
